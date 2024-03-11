@@ -1,18 +1,18 @@
 ﻿version: '3.8'
 services:
-  app:
-    image: outbox-pattern-api
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "8080:8080"
-    depends_on:
-      - db
-      - rabbitmq
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Host=db;Database=outbox_test;Username=postgres;Password=postgres
+  # app:
+  #   image: outbox-pattern-api
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8080:8080"
+  #   depends_on:
+  #     - db
+  #     - rabbitmq
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - ConnectionStrings__DefaultConnection=Host=db;Database=outbox_test;Username=postgres;Password=postgres
 
   db:
     image: postgres:latest

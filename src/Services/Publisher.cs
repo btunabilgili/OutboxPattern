@@ -19,7 +19,8 @@ namespace OutboxPattern.Services
         {
             var factory = new ConnectionFactory()
             {
-                HostName = "rabbitmq",
+                HostName = "localhost",
+                Port = 5672,
                 UserName = "user",
                 Password = "password"
             };
