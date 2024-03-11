@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern", "OutboxPattern.csproj", "{10676050-55DA-4BD6-AC90-22DDBC35EFC0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E9C66DD2-084E-4A11-9B20-C44DB601C635}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0D74654C-7F3D-4695-BA32-F0B83D8FAB51}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OutboxPattern", "src\OutboxPattern.csproj", "{B23E9C23-4BF2-4F71-80CD-315CF228B93A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +19,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{10676050-55DA-4BD6-AC90-22DDBC35EFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10676050-55DA-4BD6-AC90-22DDBC35EFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10676050-55DA-4BD6-AC90-22DDBC35EFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10676050-55DA-4BD6-AC90-22DDBC35EFC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23E9C23-4BF2-4F71-80CD-315CF228B93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23E9C23-4BF2-4F71-80CD-315CF228B93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23E9C23-4BF2-4F71-80CD-315CF228B93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23E9C23-4BF2-4F71-80CD-315CF228B93A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B23E9C23-4BF2-4F71-80CD-315CF228B93A} = {E9C66DD2-084E-4A11-9B20-C44DB601C635}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {299AFFB0-D606-4B2A-A246-46A3CCD1CABE}
